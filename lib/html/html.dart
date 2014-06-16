@@ -18,6 +18,11 @@ int innerWidth(dom.HtmlElement e) {
    return parseInt(cs.width) + parseInt(cs.paddingLeft) + parseInt(cs.paddingRight);
 }
 
+int innerHeight(dom.HtmlElement e) {
+  var cs = e.getComputedStyle();
+   return parseInt(cs.height) + parseInt(cs.paddingTop) + parseInt(cs.paddingBottom);
+}
+
 int outerWidth(dom.HtmlElement e) {
   var cs = e.getComputedStyle();
    return parseInt(cs.width) + parseInt(cs.paddingLeft) + parseInt(cs.paddingRight) + parseInt(cs.borderLeftWidth) + parseInt(cs.borderRightWidth);
