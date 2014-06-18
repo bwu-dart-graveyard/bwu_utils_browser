@@ -4,7 +4,7 @@ packages:
   bwu_utils:
     description: bwu_utils
     source: hosted
-    version: "0.0.1"
+    version: "0.0.2"
   matcher:
     description: matcher
     source: hosted

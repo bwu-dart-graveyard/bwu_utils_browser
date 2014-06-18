@@ -7,7 +7,7 @@ environment:
   sdk: '>=1.0.0 <2.0.0'
 
 dependencies:
-  bwu_utils: '>=0.0.1 <0.1.0'
+  bwu_utils: '>=0.0.2 <0.1.0'
 #    path: ../bwu_utils
 
 dev_dependencies:
