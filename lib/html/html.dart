@@ -81,14 +81,12 @@ int parseInt(String s) {
     return 0;
   }
   if(s.endsWith('%')) {
-    return int.parse(s.substring(0, s.length-1));
+    s = s.substring(0, s.length-1);
   } else if (s.endsWith('px')) {
-//      print(s);
-//      print(s.substring(0,s.length-2));
-    return int.parse(s.substring(0, s.length-2));
+    s = s.substring(0, s.length-2);
   }
   try {
-    return int.parse(s);
+    return num.parse(s).round();
   } on FormatException catch (e) {
     print('message: ${e.message}; value: "${s}"');
     rethrow;
