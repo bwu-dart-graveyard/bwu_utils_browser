@@ -16,6 +16,11 @@ void main() {
       expect(tools.parseInt('184'), equals(184));
     });
 
+    test('with dimensions', () {
+      expect(tools.parseInt('10px'), equals(10));
+      expect(tools.parseInt('10%'), equals(10));
+    });
+
     test('with double value', () {
       expect(tools.parseInt('184.984375'), equals(185));
     });
